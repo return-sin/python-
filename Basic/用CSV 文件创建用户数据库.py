@@ -3,7 +3,7 @@ import csv
 
 
 def registerUser():
-    with open("c:\\Users\\CAFFEINE\\Desktop\\user.csv", mode="a", newline="") as f:
+    with open("c:\\Users\\Desktop\\user.csv", mode="a", newline="") as f:
         writer = csv.writer(f, delimiter=",")
         print("To register, please enter your info:")
         email = input("Eamil:")
@@ -22,7 +22,7 @@ def loginUser():
     email = input("Eamil:")
     password = input("Password:")
     clear_output()
-    with open("c:\\Users\\CAFFEINE\\Desktop\\user.csv", mode="r", newline="") as f:
+    with open("c:\\Users\\Desktop\\user.csv", mode="r", newline="") as f:
         reader = csv.reader(f, delimiter=",")
         for row in reader:
             if row[0] == email and row[1] == password:
